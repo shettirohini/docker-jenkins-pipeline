@@ -27,7 +27,7 @@ pipeline {
         }
         stage('Deploy Docker Container') {
             steps {
-                sh "docker run -d -p 6000:6000 ${DOCKER_IMAGE}"
+                sh "docker run -d -p 5000:5000 ${DOCKER_IMAGE}"
             }
         }
     }
